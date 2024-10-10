@@ -1,0 +1,89 @@
+body {
+    background-color: #f2e9d8;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+}
+
+table {
+    background-image: url(paveiksliukai/pattern.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 1.8em;
+    width: 500px;
+    height: 200px;
+}
+
+table,
+td {
+    border: 2px solid red;
+    border-collapse: collapse;
+}
+
+table#pirma-lentele td {
+    vertical-align: top;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+td.langeliai {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+p#pirmas-paragrafas {
+    color: chocolate;
+    font-size: 1.5em;
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+a {
+    color: darkred;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+img {
+    height: 200px;
+}
+
+li {
+    text-transform: lowercase;
+}
+
+ul li {
+    list-style: square;
+}
+
+ol li {
+    list-style-type: upper-roman;
+}
+
+li.saraso-elementai {
+    list-style: none;
+    border-bottom: 2px solid silver;
+}

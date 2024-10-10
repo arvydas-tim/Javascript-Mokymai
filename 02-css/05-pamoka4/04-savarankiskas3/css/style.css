@@ -1,0 +1,82 @@
+html,
+body {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER STYLING START*/
+div.header {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0.5em;
+}
+
+/* HEADER STYLING END */
+/* BODY STYLING START */
+.subheader {
+    background-color: rgb(177, 61, 255);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.subheader p {
+    text-align: center;
+    width: 75vw;
+
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(245, 241, 241);
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.articles div {
+    width: 30vw;
+    background-color: #fff;
+    border: solid 1px rgba(185, 180, 180, 0.70);
+    width: 25vw;
+    height: 25vh;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.articles div p {
+    padding: 0.2em;
+}
+
+.subfooter {
+    background-color: rgb(177, 61, 255);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* BODY STYLING END */
+/* FOOTER STYLING START */
+.footer {
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+
+}
+
+/* FOOTER STYLING END */

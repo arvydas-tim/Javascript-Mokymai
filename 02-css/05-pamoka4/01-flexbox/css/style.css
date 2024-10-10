@@ -1,0 +1,47 @@
+html,
+body {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}
+
+main {
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+img {
+    margin-top: 10px;
+}
+
+div {
+    padding: 0 20px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: cornflowerblue;
+    border: none;
+    font-size: 16px;
+}
+
+@media all and (min-width: 650px ) {
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    img{min-width: 400px;}
+}

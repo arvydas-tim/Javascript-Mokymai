@@ -1,0 +1,20 @@
+
+.products-block {
+    .blcoktitle {
+        h2 {
+            font-weight: bold;
+        }
+    }
+
+    .block-content {
+        .product-item {
+            h3 {
+                color: orange
+            }
+
+            p {
+                color: blue;
+            }
+        }
+    }
+}

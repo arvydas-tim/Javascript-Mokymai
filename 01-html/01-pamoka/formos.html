@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="teksto laukelis" /><br />
+      <input type="password" placeholder="slaptazodis" /><br />
+      <input type="email" placeholder="epastas" /><br />
+      <input type="number" value="1" min="1" max="100" /><br />
+      <input
+        type="text"
+        placeholder="apribotas teksto laukelis"
+        maxlength="10"
+      /><br />
+      <input type="text" placeholder="negalima rasyti" readonly /><br />
+      <input type="text" placeholder="isjungtas" disabled /><br />
+      <input type="text" placeholder="privalomas ivest" required /><br />
+      <input type="radio" name="lytis" value="vyras" />Vyras<br />
+      <input type="radio" name="lytis" value="moteris" />Moteris<br />
+      <input type="checkbox" name="sutikimas" value="1" />Sutinku su
+      taisyklėmis<br />
+      <select name="miestas">
+        <option value="Vilnius">Vilnius</option>
+        <option value="Kaunas">Kaunas</option>
+        <option value="Klaipeda">Klaipeda</option>
+        <option value="Panevezys">Panevezys</option></select
+      ><br />
+      <textarea name="message" id="message" cols="50" rows="20"></textarea>
+      <input type="submit" value="patvirtinimo mygtukas" /><br />
+    </form>
+
+    <h1>Formu uzduotys</h1>
+
+    <p>užduotis 1</p>
+
+    <form>
+      <input type="text" placeholder="Vartotojo vardas" /><br />
+      <input type="password" placeholder="Slaptažodis" /><br />
+      <input type="submit" value="Prisijungti" /><br />
+    </form>
+
+    <p>užduotis 2</p>
+
+    <form>
+      <input type="text" placeholder="Jūsų vardas" /><br />
+      <input type="email" placeholder="Jūsų el. pašto adresas" /><br />
+      <input type="text" placeholder="Žinutės tema" /><br />
+      <textarea
+        name="message"
+        placeholder="Žinutė"
+        cols="20"
+        rows="3"
+      ></textarea
+      ><br />
+      <input type="submit" value="Siųsti žinutę" /><br />
+    </form>
+
+    <p>užduotis 3</p>
+
+    <form>
+      <input type="text" placeholder="Vardas" /><br />
+      <input type="email" placeholder="El. pašto adresas" /><br />
+      <input type="email" placeholder="El. pašto adresas dar kartą" /><br />
+      <textarea name="message"placeholder="Aprašymas apie save" cols="18" rows="5"></textarea><br />  
+      <input type="radio" name="lytis" value="moteris" />Moteris
+      <input type="radio" name="lytis" value="vyras" />Vyras <br />
+      <input type="submit" value="Registruotis" /><br />
+    </form>
+
+    <p>užduotis 4</p>
+
+    <form>
+      <label for="vardasID">Vardas</label>
+      <input type="text" id="vardasID" /><br />
+      <label for="pavardeID">Pavardė</label>
+      <input type="text" id="pavardeID" /><br />
+      <input type="submit" value="Prisijungti" /><br />
+    </form>
+  </body>
+</html>

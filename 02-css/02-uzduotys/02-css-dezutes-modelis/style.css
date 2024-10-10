@@ -1,0 +1,121 @@
+body {
+    background-color: burlywood;
+    transition: background-color 3s ease-in-out;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background-color: brown;
+    max-width: 80%;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#container1 {
+    border: 12px solid darkgray;
+}
+
+#container2 {
+    padding: 5em;
+    border-radius: 150px;
+}
+
+#container3 {
+    padding: 5em 0 5em 0;
+    border-bottom: 10px solid chocolate;
+    border-right: 10px dashed darkgreen;
+}
+
+#container4 {
+    padding: 0 5em 1em 5em;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50px;
+}
+
+#container5 {
+    padding: 0 0 5em 0;
+    border-left: 10px double red;
+}
+
+div#container6 li {
+    display: inline
+}
+
+#container7 {
+    width: 500px;
+    padding: 1em;
+}
+
+#container7 input {
+    display: block;
+}
+
+#container8 p,
+#container8 a {
+    font-size: 2em;
+}
+
+#container8 mark:hover {
+    position: relative;
+    bottom: 10px;
+}
+
+#container8 a:hover {
+    position: relative;
+    left: 20px;
+}
+
+#virsus-blokas {
+    background-color: beige;
+    padding: 1em;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    margin: 0;
+}
+
+#virsus-blokas a {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(pattern.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#info h1 {
+    margin: 0;
+    display: inline-block;
+    background-color: blanchedalmond;
+    color: darkred;
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+#info p {
+    display: inline-block;
+    background-color: blanchedalmond;
+    color: darkred;
+    font-size: 1em;
+    max-width: 40%;
+}
+#info{position: absolute;
+left: 20vh;
+bottom: 70vh;
+margin: 0;
+background: none
+;}

@@ -1,0 +1,45 @@
+
+
+body {
+    background-color: white;
+}
+
+div.card {
+    /* position: relative; */
+    background-color: wheat;
+    max-width: 400px;
+    margin: 2em auto 2em auto;
+    box-shadow: 5px 5px 10px lightgray;
+    overflow: hidden;
+}
+
+div.picture {
+    position: relative;
+    overflow: hidden;
+
+}
+
+img {
+
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 200px;
+}
+
+h2, p {padding: 0 0.5em 0 0.5em;}
+
+
+.infoblock span {
+    font-weight: bold;
+}
+
+p.infoblock {
+    position: absolute;
+    background-color: white;
+    /* janky jank */
+    bottom: 0px;
+    margin: 0;
+    padding: 5px;
+    /* janky jank */
+}

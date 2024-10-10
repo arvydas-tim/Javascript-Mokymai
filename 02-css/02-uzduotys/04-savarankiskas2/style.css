@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    border: 10px solid wheat;
+}
+
+
+#nav_links li {
+    list-style: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+div {
+    margin: 0 auto 0 auto;
+    /* padding: 0 auto 0 auto; nereikalingas*/
+    /* max-width: 80%; */
+    text-align: center;
+}
+
+
+.articles {
+    width: 70vw;
+    max-width: 1440px;
+}
+
+#nav_links {
+    padding: 2em 0 2em 0;
+}
+
+#nav_links a {
+    padding: 0 1em 0em 1em;
+}
+
+#banner-floater {
+    background-image: url(brutal.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#floater-text {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    background-color: wheat;
+    color: black;
+    padding: 0 1em 0 1em;
+    font-style: italic;
+    border-radius: 10%;
+    border: solid black;
+}

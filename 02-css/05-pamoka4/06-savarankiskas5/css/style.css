@@ -1,0 +1,152 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* HEADER STYLING START */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 10em;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+
+}
+
+header a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+header svg {
+    border: solid 2px #FFF;
+    border-radius: 50%;
+    padding: 12px;
+    display: flex;
+}
+
+/* HEADER STYLING END */
+/* BODY STYLING START */
+main {
+    background-image: url(../resources/tilesmall2.jpg);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+main div {
+    display: flex;
+    background-color: #000;
+    width: 75vw;
+    margin: 5em 0;
+    padding: 2em 4em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+}
+
+main h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: 0.08em;
+    margin: 0;
+}
+
+main p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+main .card {
+    overflow: hidden;
+    width: 30vw;
+    max-width: 300px;
+    height: 30vw;
+    max-height: 440px;
+    border: 3px solid #FFF;
+    margin: 0 1em;
+    padding: 3em 1em;
+    justify-content: space-between;
+}
+
+.card div {
+    margin: 0;
+    padding: 0;
+}
+
+main .card img {
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    object-fit: fill;
+    object-position: center;
+}
+
+.card h3 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+}
+
+.card p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    padding: 0 2em;
+    text-align: center;
+    margin: 0;
+}
+
+.card span {
+    border-top: solid 3px #FFF;
+    width: 23px;
+}
+
+.card a {
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    border: 2px solid #000;
+    padding: 0.8em 1.2em;
+    color: rgba(150, 97, 231, 1);
+}
+
+.card a:hover {
+    border: 2px solid rgba(150, 97, 231, 1)
+}
+
+/* BODY STYLING END */
+/* FOOTER STYLING START */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1.2em 0.5em;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+}
+
+/* FOOTER STYLING END */

@@ -1,0 +1,56 @@
+body {
+    border: 5px solid #FFF;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+}
+
+div #section1 {
+    display: flex;
+    flex-direction: row;
+}
+
+div #section2 {
+    display: flex;
+    flex-direction: row;
+    background-color: orangered;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+div #section2 p {
+    background-color: #FFF;
+    margin: 0.5em;
+}
+
+div #section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 5em;
+}
+
+div #section3 p {
+    background-color: #FFF;
+    padding: 1.5em;
+}
+
+div #section4 {
+    display: flex;
+    flex-direction: row;
+    background-color: orangered;
+    justify-content: space-around;
+    padding: 2em 0;
+}
+
+div #section4 p {
+    background-color: orange;
+    width: 20vw;
+    padding: 2em;
+}

@@ -1,0 +1,88 @@
+body {
+    background-color: #000;
+}
+
+.container {
+    background-color: beige;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.container div {
+    border-radius: 10px;
+}
+
+.container .red {
+    background-color: red;
+    grid-column: span 4;
+}
+
+.container .blue {
+    background-color: blue;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.container .green {
+    background-color: green;
+    grid-column: span 2;
+}
+
+.container .purple {
+    background-color: purple;
+
+}
+
+.container .purplerer {
+    background-color: purple;
+
+}
+/* ------------------------- */
+
+
+.container2 {
+    background-color:darkkhaki;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "r r r r"
+    "b b g g"
+    "b b p pp";
+}
+
+.container2 div {
+    border-radius: 10px;
+
+}
+
+.container2 .red {
+    background-color: red;
+    grid-area: r;
+}
+
+.container2 .blue {
+    background-color: blue;
+    grid-area: b;
+}
+
+.container2 .green {
+    background-color: green;
+    grid-area: g;
+}
+
+.container2 .purple {
+    background-color: purple;
+    grid-area: p;
+
+}
+
+.container2 .purplerer {
+    background-color: purple;
+    grid-area: pp;
+}
