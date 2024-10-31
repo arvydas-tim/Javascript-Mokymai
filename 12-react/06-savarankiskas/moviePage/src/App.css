@@ -1,0 +1,102 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* .main-container{
+  display: flex;
+} */
+form {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 22px
+}
+
+form input {
+  margin: 0.5em;
+  font-size: 22px
+}
+
+form label {
+  margin-right: 0.4em;
+}
+
+form select {
+  width: 150px;
+  font-size: 22px
+}
+
+.movie-cards {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+.card {
+  background-color: #5757573a;
+  border-radius: 8px;
+  position: relative;
+  max-width: 250px;
+}
+
+.movie-cards h2 {
+  height: 2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-cards img {
+  width: 220px;
+  height: 330px;
+  object-fit: fill;
+}
+
+.movie-cards button {
+  position: absolute;
+  bottom: 8px;
+  padding: 0.5em 0.8em;
+  background-color: #7675751e;
+  color: #535bf2;
+}
+
+.watchlist-container {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  padding: 0.8em 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2em;
+  gap: 0.3em;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.watchlist-container .deleteButton {
+  padding: 0;
+  padding-top: 0.1em;
+
+}
+
+.watchlist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+  background-color: #24242432;
+height: 2em;
+  width: 100%;
+  padding-left: 0.5em;
+  border-radius: 8px;
+}

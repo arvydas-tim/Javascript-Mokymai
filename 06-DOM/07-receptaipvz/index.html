@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptai</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <h1>Pasirinkite receptą</h1>
+            <div class="cardContainer">
+                <div class="card" id="1">
+                    <svg id="svg1" class="hide" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261"/>
+                        <line x1="6.35355" y1="9.64645" x2="12.3536" y2="15.6464" stroke="white"/>
+                        <line x1="11.6464" y1="15.6464" x2="19.6464" y2="7.64645" stroke="white"/>
+                    </svg>
+                    <img src="img/1.jpg" alt="Vištiena su salotom">
+                    <h2>Vištiena su salotom</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptatum ducimus. Ullam accusantium recusandae modi doloribus, et neque iusto rerum!</p>
+                </div>
+                <div class="card" id="2">
+                    <svg id="svg2" class="hide" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261"/>
+                        <line x1="6.35355" y1="9.64645" x2="12.3536" y2="15.6464" stroke="white"/>
+                        <line x1="11.6464" y1="15.6464" x2="19.6464" y2="7.64645" stroke="white"/>
+                    </svg>
+                    <img src="img/2.jpg" alt="Moliūgų sriuba">
+                    <h2>Moliūgų sriuba</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptatum ducimus. Ullam accusantium recusandae modi doloribus, et neque iusto rerum!</p>
+                </div>
+                <div class="card" id="3">
+                    <svg id="svg3" class="hide" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <circle cx="12.5" cy="12.5" r="12.5" fill="#0FC261"/>
+                        <line x1="6.35355" y1="9.64645" x2="12.3536" y2="15.6464" stroke="white"/>
+                        <line x1="11.6464" y1="15.6464" x2="19.6464" y2="7.64645" stroke="white"/>
+                    </svg>
+                    <img src="img/3.jpg" alt="Švediški kukulaičiai padaže">
+                    <h2>Švediški kukulaičiai padaže</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, voluptatum ducimus. Ullam accusantium recusandae modi doloribus, et neque iusto rerum!</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h1 id="portionTitle">Kiek porcijų gaminsite?</h1>
+            <input type="range" min="1" max="10" class="slider" id="myRange">
+            <p id="sliderValue">1</p>
+        </div>
+        <div class="section">
+            <h1>Jums reikės šių ingredientų, tokiais kiekiais:</h1>
+            <div id="displayScreen"></div>
+        </div>
+    </div>
+</body>
+
+</html>

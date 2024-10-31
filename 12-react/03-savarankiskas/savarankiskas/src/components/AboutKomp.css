@@ -1,0 +1,19 @@
+
+.about-content {
+    background-color: rgb(21, 45, 67);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-content p {
+    margin: 1.5em;
+    text-align: left;
+}
+
+.about-content img {
+    width: 400px;
+    height: 200px;
+    background-color: grey;
+    margin: 1.5em;
+}

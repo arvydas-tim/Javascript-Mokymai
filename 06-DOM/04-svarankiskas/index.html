@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langai</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <header class="block-wrapper">
+        <h1>Stiklita</h1>
+        <h4>Nuo gamybos iki jūsų namų</h4>
+    </header>
+    <div class="shop-wrapper block-wrapper">
+        <h2>Mūsų produktai</h2>
+        <div class="product-card" id="product1">
+            <img src="resources/langas-V1-1920w.webp" alt="lango brėžinys">
+            <h3>Vienos dalies langai</h3>
+            <div class="input-wrapper">
+                <label for="kiekis">Kiekis</label>
+                <input type="number" min="0" step="1" value="0" id="kiekis">
+            </div>
+            <div class="input-wrapper">
+                <label for="varstymas">Tipas</label>
+                <select name="varstymas" id="varstymas">
+                    <option value="nevarstomi">Nevarstomi</option>
+                    <option value="atverciamas">Atverčiamas</option>
+                    <option value="atidaromas">Atidaromas</option>
+                </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="apdaila">Apdaila</label>
+                <select name="apdaila" id="apdaila">
+                    <option value="balta">Balta</option>
+                    <option value="medis">Medžio imitacija</option>
+                    <option value="kita">Kita</option>
+                </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="plotis">Plotis(mm)</label>
+                <input type="number" min="0" step="10" value="0" id="plotis">
+            </div>
+            <div class="input-wrapper">
+                <label for="aukstis">Aukstis(mm)</label>
+                <input type="number" min="0" step="10" value="0" id="aukstis">
+            </div>
+        </div>
+        
+    </div>
+    <div class="calc-wrapper block-wrapper">
+        <h2>Preliminari kaina</h2>
+        <div id="results">
+            <p>0Eur</p>
+        </div>
+    </div>
+</body>
+
+</html>

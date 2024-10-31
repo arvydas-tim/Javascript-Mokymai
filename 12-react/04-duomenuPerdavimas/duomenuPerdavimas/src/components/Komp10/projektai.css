@@ -1,0 +1,54 @@
+.projektai {
+    background: #555;
+    color: #f1f1f1;
+
+    letter-spacing: 0.1em;
+    width: 100%;
+    padding: 1em;
+}
+
+
+.projektu-list {
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    padding: 2em;
+}
+
+.projektas {
+    background-color: violet;
+    width: 300px;
+    border-radius: 22px;
+}
+
+/* 
+.projektai {
+    background-color: brown;
+    letter-spacing: 0.1em;
+    width: 100%;
+    padding: 1em;
+}
+
+
+.projektu-list {
+    background-color: violet;
+    display: flex;
+    gap: 2em;
+    padding: 2em;
+}
+
+.projektas {
+    transition: ease-in-out 1.5ms;
+    width: 200px;
+}
+
+.projektas p {
+    text-wrap: nowrap;
+}
+
+.projektas:hover {
+    background-color: chartreuse;
+    color: blue;
+    padding: -8px;
+} */

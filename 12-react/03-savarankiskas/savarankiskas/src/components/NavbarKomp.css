@@ -1,0 +1,17 @@
+.navbar .links {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
+    max-width: 500px;
+}
+
+.navbar a {
+    text-decoration: none;
+}

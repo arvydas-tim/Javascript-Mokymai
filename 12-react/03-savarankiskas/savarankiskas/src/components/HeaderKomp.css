@@ -1,0 +1,11 @@
+.header p {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.header button {
+    margin: 0.5em;
+    background-color: rgb(21, 45, 67);
+    font-weight: 700;
+}

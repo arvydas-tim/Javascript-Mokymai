@@ -1,0 +1,10 @@
+.naujienos-wrapper {
+    background-color: purple;
+    padding: 30px;
+}
+
+.naujienos-list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}

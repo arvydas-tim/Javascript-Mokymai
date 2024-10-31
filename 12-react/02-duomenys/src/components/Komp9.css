@@ -1,0 +1,21 @@
+.prekiu-wrapper{width: 80vw;
+margin: 0 auto;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;}
+
+.prekiu-list {background-color: rgb(25, 36, 69);
+height: 900px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+flex-flow:  wrap;
+align-items: center;
+padding: 0.5em;}
+
+.prekes-blokas {background-color: rgb(67, 83, 133);
+    padding: 1em;
+    margin: 0 1em;
+width: 250px;
+height: 200px;}

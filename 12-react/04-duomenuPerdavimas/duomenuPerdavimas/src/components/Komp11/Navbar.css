@@ -1,0 +1,27 @@
+nav {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+    width: 100vw;
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    letter-spacing: 0.1em;
+    padding-left: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding-right: 2em;
+    display: flex;
+    gap: 2em;
+
+}
+nav ul a 
+{color:#f1f1f1;}

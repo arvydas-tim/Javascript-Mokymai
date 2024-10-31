@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="receptai">
+            <h3>Pasirinkite receptą</h3>
+            <div class="receptukai">
+                <div class="receptas" id="recipe1Div" onclick="handleRecipeSelection('recipe1')">
+                    <img src="img/chicken.png" alt="Vištiena su salotom">
+                    <h4>Vištiena su salotom</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error dolor minus cupiditate quae vero officiis. Aliquam quidem nobis earum.</p>
+                </div>
+                <div class="receptas" id="recipe2Div" onclick="handleRecipeSelection('recipe2')">
+                    <img src="img/cake.png" alt="Tortas su mėlynėm">
+                    <h4>Tortas su mėlynėm</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error dolor minus cupiditate quae vero officiis. Aliquam quidem nobis earum.</p>
+                </div>
+                <div class="receptas" id="recipe3Div" onclick="handleRecipeSelection('recipe3')">
+                    <img src="img/pasta.png" alt="Makaronai su mėsa">
+                    <h4>Makaronai su mėsa</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores error dolor minus cupiditate quae vero officiis. Aliquam quidem nobis earum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="kiekis">
+            <h3>Kiek porcijų gaminsite?</h3>
+            <input type="range" min="1" max="6" value="1" id="porcijos">
+            <span id="porcijosValue">1</span>
+        </div>
+        <div class="ingredientai">
+            <h3>Jums reikės šių ingredientų, tokiais kiekiais:</h3>
+            <ul id="ingredientuSarasas"></ul>
+        </div>
+    </div>
+</body>
+</html>

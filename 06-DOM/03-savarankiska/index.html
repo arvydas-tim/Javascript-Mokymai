@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div id="pirmas">
+        <h1 id="pirma-antraste">Pirma antraštė</h1>
+        <p id="pirmas-paragrafas">Pirmas paragrafas</p>
+    </div>
+    <div id="antras">
+        <p id="paragrafo-tekstas">
+            Ši teksta turime matyti konsoleje
+        </p>
+    </div>
+    <div id="trecias">
+        <p>Turime matyti konsoleje paragrafa arba tik teksta</p>
+    </div>
+    <div id="ketvirtas">
+        <button
+            onclick="document.getElementById('paragrafas-pakeitimui').innerHTML='Pakeistas paragrafo tekstas'">Pakeisti
+            teksta</button>
+        <p id="paragrafas-pakeitimui">Nepakeistas paragrafo tekstas</p>
+    </div>
+    <div id="penktas">
+        <button onclick="document.getElementById('paragrafas-5').style.fontSize='35px'">Pakeisti dydi</button>
+
+        <button onclick="document.getElementById('paragrafas-5').style.color='red'">Pakeisti spalva</button>
+
+        <p id="paragrafas-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto asperiores magni
+            reprehenderit sequi voluptatem quod.</p>
+    </div>
+    <div id="sestas">
+        <p><img src="light-off.png" alt="lempute" id="lempute"></p>
+        <button onclick="document.getElementById('lempute').src='light-on.png'">Įjungti lempute</button>
+        <button onclick="document.getElementById('lempute').src='light-off.png'">Įšjungti lempute</button>
+    </div>
+    <div id="septintas">
+        <button onclick="pakeisti()">Pakeisti teksta</button>
+        <p id="septinto-tekstas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perferendis enim
+            atque perspiciatis nulla accusamus!</p>
+    </div>
+    <div id="astuntas">
+        <button onclick="pakeisti2('astunto-tekstas', 'vienas du trys')">Pakeisti teksta 1</button>
+        <button onclick="pakeisti2('astunto-tekstas', 'batai kupranugaris meska')">Pakeisti teksta 2</button>
+        <button onclick="pakeisti2('astunto-tekstas', 'stalas kede medis')">Pakeisti teksta 3</button>
+        <button onclick="pakeisti2('astunto-tekstas', 'berzas obelis gyvate')">Pakeisti teksta 4</button>
+
+        <p id="astunto-tekstas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perferendis enim
+            atque perspiciatis nulla accusamus!</p>
+    </div>
+    <div id="devintas">
+        <button onclick="pakeisti3('devinto-tekstas', 'vienas du trys')">Pakeisti teksta 1</button>
+        <button onclick="pakeisti3('devinto-tekstas', 'batai kupranugaris meska')">Pakeisti teksta 2</button>
+        <button onclick="pakeisti3('devinto-tekstas', 'stalas kede medis')">Pakeisti teksta 3</button>
+        <button onclick="pakeisti3('devinto-tekstas', 'berzas obelis gyvate')">Pakeisti teksta 4</button>
+        <br>
+        <button onclick="kitaSpalva('devinto-tekstas','black')">Juoda</button>
+        <button onclick="kitaSpalva('devinto-tekstas','red')">Raudona</button>
+        <button onclick="kitaSpalva('devinto-tekstas','green')">Žalia</button>
+
+        <p id="devinto-tekstas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perferendis enim
+            atque perspiciatis nulla accusamus!</p>
+    </div>
+    <div id="desimtas">
+        <p id="suma"></p>
+        <p id="skirtumas"></p>
+        <p id="sandauga"></p>
+        <p id="dalmuo"></p>
+    </div>
+    <div id="vienuoliktas">
+        <div id="vienuolikto-turinys"></div>
+    </div>
+    <div id="dvyliktas">
+        <p>
+            Spalva:
+            <button onclick="keistiSpalva('dvylikto-tekstas','black')">Originali</button>
+            <button onclick="keistiSpalva('dvylikto-tekstas','red')">Raudona</button>
+            <button onclick="keistiSpalva('dvylikto-tekstas','royalblue')">Melyna</button>
+            <button onclick="keistiSpalva('dvylikto-tekstas','green')">Zalia</button>
+        </p>
+
+        <p>
+            Teksto dydis:
+            <button onclick="keistiDydi('dvylikto-tekstas',16)">Originali</button>
+            <button onclick="keistiDydi('dvylikto-tekstas',18)">18px</button>
+            <button onclick="keistiDydi('dvylikto-tekstas',24)">24px</button>
+            <button onclick="keistiDydi('dvylikto-tekstas',120)">120px</button>
+        </p>
+
+        <p id="dvylikto-tekstas">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perferendis enim
+            atque perspiciatis nulla accusamus!
+        </p>
+    </div>
+    <div id="tryliktas">
+        <div class="parametrai">
+            <div class="parametras">
+                <p>Plotis:</p>
+                <input type="range" min="100" max="500" value="100" id="plocio-slider">
+            </div>
+            <div class="parametras">
+                <p>Aukstis:</p>
+                <input type="range" min="100" max="500" value="100" id="aukscio-slider">
+            </div>
+            <div class="parametras">
+                <p>Spalva:</p>
+                <select id="spalvos-pasirinkimas">
+                    <option value="burlywood">Burlywood</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <div class="parametras">
+                <p>Teksto spalva:</p>
+                <select id="teksto-spalvos-pasirinkimas">
+                    <option value="burlywood">Burlywood</option>
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <div class="parametras">
+                <p>Tekstas per viduri:</p>
+                <input type="text" value="tekstas per viduri" id="tekstas-divui">
+            </div>
+
+
+        </div>
+        <div id="div-keitimui">
+            Tekstas per viduri
+        </div>
+    </div>
+    <div id="keturioliktas">
+        <p>Jusu surinktas tekstas:</p>
+        <textarea id="zodziu-inputas" rows="10" readonly></textarea>
+        <p>
+            <button onclick="pridetiZodi('zodziu-inputas', 'Kupranugaris')">Kupranugaris</button>
+            <button onclick="pridetiZodi('zodziu-inputas', 'Oziaragis')">Oziaragis</button>
+            <button onclick="pridetiZodi('zodziu-inputas', 'Doggo')">Doggo</button>
+
+        </p>
+
+    </div>
+    <div id="penkioliktas">
+        <p>Jusu surinktas tekstas:</p>
+        <textarea id="penkiolikto-tekstas" rows="10"></textarea>
+        <p>
+            <button onclick="zodziuKiekis()">Zodziu kiekis</button>
+            <button onclick="ilgiausiasZodis()">Ilgiausias Zodis</button>
+            <button onclick="trumpiausiasZodis()">Trumpiausias Zodis</button>
+        </p>
+        <div id="penkiolikto-atsakymai"></div>
+    </div>
+    <div id="sesioliktas">
+        <p>
+            <button onclick="pirmasSkirtukas()">Pirmas Skirtukas</button>
+            <button onclick="antrasSkirtukas()">Antras Skirtukas</button>
+        </p>
+        <div id="pirmas-skirtukas" class="skirtukas">
+            <p> pirmo skirtuko content </p>
+        </div>
+        <div id="antras-skirtukas" class="skirtukas">
+            <p> antro skirtuko content </p>
+        </div>
+
+    </div>
+    <div id="septinioliktas">
+        <button id="perjungti-mygtukas">Rodyti</button>
+        <p id="perjungti-tekstas">Tekstas</p>
+    </div>
+    <div id="astuonioliktas">
+        <button id="kitas-perjungti-mygtukas">Rodyti</button>
+        <p id="kitas-perjungti-tekstas">Tekstas</p>
+    </div>
+    <div id="devynioliktas">
+        <p id="devyniolikto-tekstas">Slepti sita teksta paspaudus</p>
+    </div>
+<div id="dvidesimtas">
+    <button id="nuspalvinti-virs100">Spalvinti</button>
+    <div id="spalvinamas-tekstas">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque distinctio tempora repudiandae eligendi?</p>
+        <p>Assumenda, minus ullam iste, culpa deleniti dolorum alias, esse in natus quia quod.</p>
+        <p>Officiis, omnis reiciendis, quasi veniam perspiciatis eos sunt, quia voluptates quidem corrupti deleniti!</p>
+        <p>Ducimus eaque dicta corrupti nulla cupiditate deserunt ad, hic vel magni nihil ipsam.</p>
+        <p>Iure, minima dolorum, expedita culpa blanditiis perspiciatis, ipsum quibusdam sunt ipsa aliquid veritatis.</p>
+        <p>Est suscipit ea maxime quas nesciunt reprehenderit? Repudiandae saepe qui officiis aut iste?</p>
+        <p>Ipsum ex cum unde quod placeat ut similique labore fugit laudantium, ipsa recusandae.</p>
+        <p>Quibusdam consectetur rem et repellat soluta, neque sapiente officia repudiandae exercitationem minima quod.</p>
+        <p>Nemo, nesciunt nostrum amet accusantium nobis hic sunt at molestias accusamus totam assumenda.</p>
+        <p>Voluptas temporibus inventore sapiente magnam quod deleniti doloremque eius assumenda porro ratione! Eveniet.</p>
+        <p>Cumque praesentium, maxime quam similique perferendis aspernatur inventore voluptatum deserunt quibusdam. Sint, dolore!</p>
+        <p>Deleniti odit earum ab explicabo velit? Laborum quo fugit accusantium, nobis animi dolorum.</p>
+        <p>Nostrum deleniti ipsa explicabo nesciunt assumenda totam commodi fugiat? Reprehenderit odit expedita id.</p>
+        <p>Earum pariatur eveniet consequuntur placeat quia at, ab similique autem voluptas. Minima, quibusdam?</p>
+        <p>Vel commodi aperiam quaerat dolor est eaque, numquam ea maxime unde enim illo?</p>
+        <p>Asperiores voluptate nihil consequuntur culpa blanditiis cum dolore tenetur voluptatum cupiditate? Atque, possimus.</p>
+        <p>Corporis, eligendi illum. Nemo iure id consequatur sed odio eum dignissimos quo ea.</p>
+        <p>Similique ad voluptas aspernatur adipisci autem quo, iure voluptatibus ea ratione tenetur dicta.</p>
+        <p>Officiis libero, consequuntur laudantium tenetur vero vel. Velit optio doloribus ad. Ipsa, reprehenderit!</p>
+        <p>Aspernatur, vitae rem quidem nemo, molestiae velit beatae voluptatum commodi enim iste suscipit?</p>
+    </div>
+   
+</div>
+</body>
+
+</html>

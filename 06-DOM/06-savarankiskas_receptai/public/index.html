@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptai</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class=" bg-gray-100 ">
+    <div class="main-cointainer md:container mx-auto shadow-md shadow-gray-400  bg-white p-8 m-8">
+        <h2 class="">Pasirinkite receptą:</h2>
+        <div class="card-cointainer mt-8 grid md:grid-cols-3 gap-10">
+            <div class="card" id="recipie1">
+                <div class="card-header">
+                    <span class="checkmark hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="white" class="bi bi-check2" viewBox="0 0 16 16">
+                            <path
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                        </svg></span>
+                    <img src="../images/Kukulaiciaipadaze.jpg" class="h-full w-full" alt="Švediški kukulaičiai padaže">
+                </div>
+                <div class="card-content ">
+                    <h3 class="">Švediški kukulaičiai padaže</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nihil iure
+                        optio
+                        aliquid
+                        quo
+                        voluptates minima quam facere asperiores cumque.</p>
+                </div>
+            </div>
+            <div class="card sm:w-full " id="recipie2">
+                <div class="card-header ">
+                    <span class="checkmark hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="white" class="bi bi-check2" viewBox="0 0 16 16">
+                            <path
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                        </svg></span>
+                    <img src="../images/Vistienossalotos.jpg" class="h-full w-full" alt="Vištienos salotos">
+                </div>
+                <div class="card-content ">
+                    <h3 class="">Vištienos salotos</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nihil iure
+                        optio
+                        aliquid
+                        quo
+                        voluptates minima quam facere asperiores cumque.</p>
+                </div>
+            </div>
+            <div class="card " id="recipie3">
+                <div class="card-header">
+                    <span class="checkmark hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            fill="white" class="bi bi-check2" viewBox="0 0 16 16">
+                            <path
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                        </svg></span>
+                    <img src="../images/Moliugusriuba.jpg" alt="Moliūgų sriuba" class="h-full w-full">
+                </div>
+                <div class="card-content ">
+                    <h3 class="">Moliūgų sriuba</h3>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nihil iure
+                        optio
+                        aliquid
+                        quo
+                        voluptates minima quam facere asperiores cumque.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="control-container  md:container mx-auto shadow-md shadow-gray-400  bg-white p-8 m-8">
+        <h2 class="mb-8">Kiek porcijų gaminsite?</h2>
+        <div class="slider-container relative w-72">
+            <span class="absolute -top-8" id="sliderIndicator"></span>
+            <input type="range" min="1" max="9" value="1" class="slider w-full" id="porciju-kiekis">
+        </div>
+
+    </div>
+    <div class="calcs-container  md:container mx-auto shadow-md shadow-gray-400  bg-white p-8 m-8">
+        <h2>Jums reikės šių ingredientų, tokiais kiekiais:</h2>
+        <div id="results">
+            <p>Pasirinkite receptą</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

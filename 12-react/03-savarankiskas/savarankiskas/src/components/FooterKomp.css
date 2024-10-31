@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding: 0 5em;
+}
+
+.footer:first-child {
+    flex-grow: 2;
+}
+
+.footer nav {
+    padding: 2em;
+
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 0.8em;
+    gap: 1.5em;
+}
+
